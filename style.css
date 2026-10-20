@@ -182,7 +182,7 @@ a {
 
   #visual h2 {
     position: absolute;
-    top: 30%;
+    top: 20%;
     right: 5%;
     max-width: 90%;
 
@@ -207,7 +207,7 @@ a {
   #visual .line {
     position: absolute;
     left: 50px;
-    bottom: 340px;
+    bottom: 300px;
     width: 0;
     height: 3px;
     background-color: #fff;
@@ -470,7 +470,7 @@ a {
     background-color: #000;
     position: absolute;
     top: 10px;
-    left: 150px;
+    left: 120px;
   }
 
   #container #con02 .txt {
@@ -486,13 +486,13 @@ a {
 
   #container #con02 h3 {
     font-size: 1.5rem;
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
   #container #con02 h4 {
     font-size: 1.6rem;
     line-height: 60px;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 20px;
   }
 
@@ -1070,13 +1070,13 @@ a {
 
   #visual h2 {
     position: absolute;
-    top: 30%;
+    top: 20%;
     right: 5%;
     max-width: 90%;
 
     color: #fff;
     text-align: right;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   #visual .menu {
@@ -1084,7 +1084,7 @@ a {
     color: #fff;
     position: absolute;
     left: 5%;
-    bottom: 35%;
+    bottom: 25%;
     width: 90%;
     transform: none;
     gap: 20px;
@@ -1092,8 +1092,8 @@ a {
 
   #visual .line {
     position: absolute;
-    left: 65px;
-    bottom: 340px;
+    left: 5%;
+    bottom: 35%;
     width: 0;
     height: 3px;
     background-color: #fff;
@@ -1103,8 +1103,8 @@ a {
 
   #visual .menu > li > a {
     position: relative;
-    top: -80px;
-    left: 20px;
+    top: -100px;
+    left: 0;
   }
 
   #visual .menu > li > a::after {
@@ -1125,18 +1125,17 @@ a {
 
   #visual .menu > li {
     font-size: 20px;
-    margin-right: 20px;
+    margin-right: 0;
   }
 
   #visual .menu .sub {
     position: absolute;
-    top: -100%;
+    top: -30px;
     left: 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    width: 100%;
   }
 
   #visual .menu .sub li a {
@@ -1195,7 +1194,7 @@ a {
     background-color: #000;
     position: absolute;
     top: 10px;
-    left: 200px;
+    left: 130px;
   }
 
   #container #con01 .txt {
@@ -1372,7 +1371,7 @@ a {
     background-color: #000;
     position: absolute;
     top: 10px;
-    left: 300px;
+    left: 220px;
   }
 
   #container #con02 .txt {
@@ -1517,7 +1516,7 @@ a {
     background-color: #fff;
     position: absolute;
     top: 10px;
-    left: 200px;
+    left: 130px;
   }
 
   #container #con03 .txt {
@@ -1598,7 +1597,7 @@ a {
     flex-wrap: wrap;
     position: absolute;
     bottom: -750px;
-    left: 100px;
+    left: 80px;
 
     transform: translateY(50px);
     opacity: 0;

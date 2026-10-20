@@ -197,7 +197,8 @@ $(function () {
   });
   /* #con02 */
 
-  $("#con02 ul li").on("mouseenter", function () {
+  $("#con02 ul li").on("mouseenter", function (e) {
+    e.preventDefault();
     $(this).find("p:nth-of-type(1)").css({
       "writing-mode": "horizontal-tb",
     });
@@ -208,7 +209,8 @@ $(function () {
     $(this).stop().animate({ width: "140%" });
   });
 
-  $("#con02 ul li").on("mouseleave", function () {
+  $("#con02 ul li").on("mouseleave", function (e) {
+    e.preventDefault();
     $(this).find("p:nth-of-type(1)").css({
       "writing-mode": "vertical-rl",
     });
