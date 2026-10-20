@@ -19,13 +19,14 @@ a {
   html {
     font-size: 14px;
   }
+
   /*header*/
   header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px;
     color: #fff;
     position: absolute;
     z-index: 10;
@@ -64,6 +65,8 @@ a {
     transition: right 0.35s ease-in-out;
     /* 슬라이드 애니메이션 */
     background-color: #23395b;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   header .m-drawer.active {
@@ -166,15 +169,15 @@ a {
   }
 
   .panel .bg1 {
-    background-image: url(../img/main_visual_01.jpg);
+    background-image: url(img/main_visual_01.jpg);
   }
 
   .panel .bg2 {
-    background-image: url(../img/main_visual_02.jpg);
+    background-image: url(img/main_visual_02.jpg);
   }
 
   .panel .bg3 {
-    background-image: url(../img/main_visual_03.jpg);
+    background-image: url(img/main_visual_03.jpg);
   }
 
   #visual h2 {
@@ -244,9 +247,8 @@ a {
     left: 0;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
   }
 
   #visual .menu .sub li a {
@@ -293,7 +295,13 @@ a {
     justify-content: space-between;
     gap: 40px;
   }
-
+  #container #con01,
+  #container #con01 .left,
+  #container #con01 .right {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+  }
   #container #con01 .left {
     width: 100%;
     flex-shrink: 0;
@@ -392,11 +400,9 @@ a {
   #container #con01 .right .more {
     display: flex;
     align-items: center;
-    gap: 240px;
+    gap: 40px;
+    justify-content: space-between;
     color: brown;
-  }
-
-  #container #con01 .right li:nth-of-type(2) {
   }
 
   #container #con01 .right li:nth-of-type(4) {
@@ -419,13 +425,28 @@ a {
     flex-shrink: 0;
     object-fit: cover;
   }
+  /* #container #con01 .right li:nth-of-type(4) {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  #container #con01 .right li:nth-of-type(4) > a {
+    display: flex;
+    width: 300%;
+  }
+
+  #container #con01 .right li:nth-of-type(4) > a img {
+    width: calc(100% / 3);
+    flex: 0 0 calc(100% / 3);
+  } */
 
   /*슬라이드 화살표*/
 
   .arrow {
     z-index: -10;
     display: flex;
-    gap: 80px;
+    gap: 83px;
     position: absolute;
     right: 10px;
     bottom: -50px;
@@ -532,22 +553,22 @@ a {
 
   #container #con02 ul li:nth-of-type(1) {
     width: 100%;
-    background-image: url(../img/con02_01.jpg);
+    background-image: url(img/con02_01.jpg);
   }
 
   #container #con02 ul li:nth-of-type(2) {
     width: 25%;
-    background-image: url(../img/con02_02.jpg);
+    background-image: url(img/con02_02.jpg);
   }
 
   #container #con02 ul li:nth-of-type(3) {
     width: 25%;
-    background-image: url(../img/con02_03.jpg);
+    background-image: url(img/con02_03.jpg);
   }
 
   #container #con02 ul li:nth-of-type(4) {
     width: 25%;
-    background-image: url(../img/con02_04.jpg);
+    background-image: url(img/con02_04.jpg);
   }
 
   #container #con02 ul li p:nth-of-type(1) {
@@ -591,15 +612,24 @@ a {
 
   /*#container #con03*/
   #container #con03 {
-    color: #fff;
+    /* color: #fff;
     width: 100%;
     margin: -200px auto;
     height: 1400px;
-    background-image: url(../img/con03_bg.jpg);
+    background-image: url(img/con03_bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
+    position: relative; */
+    color: #fff;
+    width: 100%;
+    margin: 100px auto 0;
+    min-height: 1400px;
+    height: auto;
+    background-image: url(img/con03_bg.jpg);
+    background-size: cover;
+    background-position: center;
     position: relative;
   }
 
@@ -687,11 +717,11 @@ a {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    left: 0;
     width: 100%;
     position: absolute;
     top: 400px;
     left: 25px;
+    /* left: 0; */
     transform: translateY(50px);
     opacity: 0;
     transition: 1s;
@@ -1037,15 +1067,15 @@ a {
   }
 
   .panel .bg1 {
-    background-image: url(../img/main_visual_01.jpg);
+    background-image: url(img/main_visual_01.jpg);
   }
 
   .panel .bg2 {
-    background-image: url(../img/main_visual_02.jpg);
+    background-image: url(img/main_visual_02.jpg);
   }
 
   .panel .bg3 {
-    background-image: url(../img/main_visual_03.jpg);
+    background-image: url(img/main_visual_03.jpg);
   }
 
   #visual h2 {
@@ -1263,7 +1293,8 @@ a {
   #container #con01 .right .more {
     display: flex;
     align-items: center;
-    gap: 260px;
+    gap: 40px;
+    justify-content: space-between;
     color: brown;
   }
 
@@ -1419,22 +1450,22 @@ a {
 
   #container #con02 ul li:nth-of-type(1) {
     width: 100%;
-    background-image: url(../img/con02_01.jpg);
+    background-image: url(img/con02_01.jpg);
   }
 
   #container #con02 ul li:nth-of-type(2) {
     width: 25%;
-    background-image: url(../img/con02_02.jpg);
+    background-image: url(img/con02_02.jpg);
   }
 
   #container #con02 ul li:nth-of-type(3) {
     width: 25%;
-    background-image: url(../img/con02_03.jpg);
+    background-image: url(img/con02_03.jpg);
   }
 
   #container #con02 ul li:nth-of-type(4) {
     width: 25%;
-    background-image: url(../img/con02_04.jpg);
+    background-image: url(img/con02_04.jpg);
   }
 
   #container #con02 ul li p:nth-of-type(1) {
@@ -1482,7 +1513,7 @@ a {
     width: 100%;
     margin: -200px auto;
     height: 800px;
-    background-image: url(../img/con03_bg.jpg);
+    background-image: url(img/con03_bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1626,12 +1657,12 @@ a {
   }
 
   #container #con03 .right li:nth-of-type(1) p:nth-of-type(4) {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   #container #con03 .right li:nth-of-type(2) p:nth-of-type(2) {
     line-height: 30px;
-    margin: 72px 0px;
+    margin: 60px 0px;
   }
 
   #container #con03 .right li:nth-of-type(2) p:nth-of-type(3) {
@@ -1854,15 +1885,15 @@ a {
   }
 
   .panel .bg1 {
-    background-image: url(../img/main_visual_01.jpg);
+    background-image: url(img/main_visual_01.jpg);
   }
 
   .panel .bg2 {
-    background-image: url(../img/main_visual_02.jpg);
+    background-image: url(img/main_visual_02.jpg);
   }
 
   .panel .bg3 {
-    background-image: url(../img/main_visual_03.jpg);
+    background-image: url(img/main_visual_03.jpg);
   }
 
   #visual h2 {
@@ -2071,7 +2102,8 @@ a {
   #container #con01 .right .more {
     display: flex;
     align-items: center;
-    gap: 280px;
+    gap: 40px;
+    justify-content: space-between;
     color: brown;
   }
 
@@ -2223,22 +2255,22 @@ a {
 
   #container #con02 ul li:nth-of-type(1) {
     width: 100%;
-    background-image: url(../img/con02_01.jpg);
+    background-image: url(img/con02_01.jpg);
   }
 
   #container #con02 ul li:nth-of-type(2) {
     width: 25%;
-    background-image: url(../img/con02_02.jpg);
+    background-image: url(img/con02_02.jpg);
   }
 
   #container #con02 ul li:nth-of-type(3) {
     width: 25%;
-    background-image: url(../img/con02_03.jpg);
+    background-image: url(img/con02_03.jpg);
   }
 
   #container #con02 ul li:nth-of-type(4) {
     width: 25%;
-    background-image: url(../img/con02_04.jpg);
+    background-image: url(img/con02_04.jpg);
   }
 
   #container #con02 ul li p:nth-of-type(1) {
@@ -2286,7 +2318,7 @@ a {
     width: 100%;
     margin: -200px auto;
     height: 700px;
-    background-image: url(../img/con03_bg.jpg);
+    background-image: url(img/con03_bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2431,7 +2463,7 @@ a {
 
   #container #con03 .right li:nth-of-type(2) p:nth-of-type(2) {
     line-height: 30px;
-    margin: 72px 0px;
+    margin: 75px 0px;
   }
 
   #container #con03 .right li:nth-of-type(2) p:nth-of-type(3) {
